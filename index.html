@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trazo Chileno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #121212;
+      --primary-color: #1f1f1f;
+      --accent-color: #00098e;
+      --text-color: #f5f5f5;
+      --muted-color: #999;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: var(--accent-color);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: var(--primary-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+
+    .card p {
+      color: var(--muted-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted-color);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Trazo Chileno</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Proyectos</a>
+      <a href="#">Tutoriales</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Generador de Planillas Automáticas</h2>
+      <p>
+        Este programa te permite generar planillas de cantidades directamente desde tu modelo BIM en Revit.
+        Solo seleccionás el tipo de elemento y en segundos obtenés un Excel listo para cotizar.
+      </p>
+      <a href="#" style="color: var(--accent-color); text-decoration: underline;">Descargar gratis</a>
+    </section>
+
+    <section class="card">
+      <h2>Script de Exportación IFC Simplificado</h2>
+      <p>
+        Herramienta para exportar modelos de Archicad a formato IFC con configuraciones predeterminadas.
+        Ahorra tiempo y garantiza compatibilidad con otras plataformas BIM.
+      </p>
+      <a href="#" style="color: var(--accent-color); text-decoration: underline;">Ver detalles</a>
+    </section>
+
+    <section class="card">
+      <h2>Automatización de Hojas en Revit</h2>
+      <p>
+        Con este plugin, podés crear hojas y vistas de manera masiva. Ideal para documentar modelos grandes
+        sin perder horas en tareas repetitivas.
+      </p>
+      <a href="#" style="color: var(--accent-color); text-decoration: underline;">Descargar plugin</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 DevArq Studio. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
